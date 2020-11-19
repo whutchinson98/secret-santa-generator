@@ -1,5 +1,5 @@
 require('dotenv').config()
-const nodemailer = require('node-mailer')
+const nodeMailer = require('node-mailer')
 const participants = require('./participants.json')
 const EMAIL = process.env.EMAIL
 const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD
@@ -46,6 +46,7 @@ const generateSecretSanta = () => {
                 i = 0
                 participantsMap = {}
                 reset = true
+                console.log("RESET")
                 break
             }
             random = Math.floor(Math.random() * participants.length)
@@ -54,7 +55,7 @@ const generateSecretSanta = () => {
             participantsMap[random] = participant
         }
     }
-    
+
     for(let i = 0; i < participantsMap.length; i++){
         emailSent = await emailHelper(i,participantsMap[i])
 
