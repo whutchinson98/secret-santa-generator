@@ -1,0 +1,23 @@
+{
+  "name": "secret-santa-generator",
+  "version": "1.0.0",
+  "description": "Secret Santa Generator that emails each participant who they are Santa for.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whutchinson98/secret-santa-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whutchinson98/secret-santa-generator/issues"
+  },
+  "homepage": "https://github.com/whutchinson98/secret-santa-generator#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-mailer": "^0.1.1"
+  }
+}
