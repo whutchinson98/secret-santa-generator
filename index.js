@@ -46,7 +46,6 @@ const generateSecretSanta = () => {
                 i = 0
                 participantsMap = {}
                 reset = true
-                console.log("RESET")
                 break
             }
             random = Math.floor(Math.random() * participants.length)
