@@ -34,7 +34,7 @@ const emailHelper = async (participantIndex, santaFor) => {
       }
 }
 
-const generateSecretSanta = () => {
+const generateSecretSanta = async () => {
     const participantsMap = {}
     for(let i = 0; i < participants.length; i++){
         const participant = participants[i]
