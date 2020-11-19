@@ -54,6 +54,8 @@ const generateSecretSanta = () => {
             participantsMap[random] = participant
         }
     }
+    
+    console.log("Generated Secret Santa pairs.")
 
     for(let i = 0; i < participantsMap.length; i++){
         emailSent = await emailHelper(i,participantsMap[i])
@@ -63,6 +65,8 @@ const generateSecretSanta = () => {
             return
         }
     }
+
+    console.log("Emails sent.")
 }
 
 
